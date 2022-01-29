@@ -8,6 +8,7 @@ const HB = {
  noData: 'אין נתונים',
  groupA: 'קבוצה א',
  groupB: 'קבוצה ב',
- Title: 'גן קפיטושקה'
+ Title: 'גן קפיטושקה',
+ PageTitle: 'הצהרת הורים על ביצוע בדיקת אנטיגן ביתית'
 }
 export default HB

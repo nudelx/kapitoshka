@@ -39,13 +39,15 @@ const User = () => {
     <Box
       display={'flex'}
       flexDirection={'column'}
-      justifyContent={'space-between'}
-      width={'80vw'}
+      justifyContent={'space-around'}
+      overflow={'hidden'}
     >
-      <Box my={3} fullWidth>
+      <Box my={3}><Typography variant='h3'>{HB.PageTitle}</Typography></Box>
+      <Box my={3}>
         <TextField
-          required
+          margin="0"
           fullWidth
+          required
           label={HB.studentName}
           value={studentName}
           onChange={(e) => setStudentName(e.currentTarget.value)}
@@ -53,8 +55,8 @@ const User = () => {
       </Box>
       <Box my={3}>
         <TextField
-          required
           fullWidth
+          required
           label={HB.studentId}
           value={studentId}
           onChange={(e) => setStudentId(e.currentTarget.value)}
@@ -62,8 +64,8 @@ const User = () => {
       </Box>
       <Box my={3}>
         <TextField
-          required
           fullWidth
+          required
           label={HB.parentName}
           value={parentName}
           onChange={(e) => setParentName(e.currentTarget.value)}
@@ -73,7 +75,6 @@ const User = () => {
       <Box my={3}>
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <DatePicker
-            fullWidth
             views={['year', 'month', 'day']}
             label={HB.date}
             value={date}
@@ -82,7 +83,7 @@ const User = () => {
               console.log('newValue', newValue)
               setDate(newValue)
             }}
-            renderInput={(params) => <TextField {...params} />}
+            renderInput={(params) => <TextField fullWidth {...params} />}
           />
         </LocalizationProvider>
       </Box>
