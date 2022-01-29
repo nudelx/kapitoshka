@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 clear
-git checkout master
+git checkout main
 git pull
 git checkout gh-pages
 git pull
-git merge -X theirs master
+git merge -X theirs main
 git commit -am "version update $(date)"
 rm -rf static/
 yarn build
@@ -26,4 +26,4 @@ rm static/css/t.css
 git add .
 git commit -am "new deploy $(date)"
 git push
-git checkout master
+git checkout main
