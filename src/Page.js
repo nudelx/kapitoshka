@@ -7,8 +7,10 @@ const Page = () => {
   return (
     <Container>
       <Box py={20}>
-        <User></User>
-        <Box mt={30}><Admin></Admin></Box>
+        <User />
+        <Box mt={30}>
+          <Admin></Admin>
+        </Box>
       </Box>
     </Container>
   )
