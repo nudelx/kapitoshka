@@ -7,6 +7,7 @@ const HB = {
  send: 'אישור',
  noData: 'אין נתונים',
  groupA: 'קבוצה א',
- groupB: 'קבוצה ב'
+ groupB: 'קבוצה ב',
+ Title: 'גן קפיטושקה'
 }
 export default HB
