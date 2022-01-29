@@ -42,6 +42,7 @@ const User = () => {
       justifyContent={'space-around'}
       overflow={'hidden'}
     >
+      <Box my={3}><Typography variant='h3'>{HB.PageTitle}</Typography></Box>
       <Box my={3}>
         <TextField
           margin="0"
