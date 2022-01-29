@@ -34,8 +34,7 @@ const Admin = () => {
       </Box>
     )
   }
-  console.log('data', data)
-  const { g1, g2 } = data
+  const { g1 } = data
   return (
     <Box>
       <Box>
