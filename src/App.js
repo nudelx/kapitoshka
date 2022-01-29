@@ -6,9 +6,7 @@ function App() {
   return (
     <div dir="rtl">
       <Header />
-      <Page>
-        <User></User>
-      </Page>
+      <Page />
     </div>
   )
 }

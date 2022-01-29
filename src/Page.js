@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box } from '@mui/material/'
+import { Container, Box, Divider } from '@mui/material/'
 import User from './User'
 import Admin from './Admin'
 
@@ -8,7 +8,7 @@ const Page = () => {
     <Container>
       <Box py={20}>
         <User></User>
-        <Admin></Admin>
+        <Box mt={30}><Admin></Admin></Box>
       </Box>
     </Container>
   )
