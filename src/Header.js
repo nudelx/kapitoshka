@@ -11,6 +11,7 @@ export default function Header() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
+          <Box className='logo'></Box>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
             {HB.Title}
           </Typography>
