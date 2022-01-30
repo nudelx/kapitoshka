@@ -12,7 +12,7 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           <Box className='logo'></Box>
-          <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
             {HB.Title}
           </Typography>
           <Button color="inherit">Admin</Button>
